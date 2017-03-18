@@ -13,4 +13,4 @@ Common networking library
 
 ### vdxMirrors
 
-Basic administration and management application. Used to register mirrors (vad_archive websites) in the common DB.
+Basic administration and management application. Used to register mirrors (vdx_archive websites) in the common DB.
