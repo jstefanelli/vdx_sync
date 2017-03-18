@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{83E0D3E5-0C29-4387-B649-9E151AE6CFB3}|Default">
+  <MonoDevelop.Ide.ItemProperties.vdxSync PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="vdxSync/Program.cs">
+    <Files>
+      <File FileName="vdxMirrors/Program.cs" Line="32" Column="4" />
+      <File FileName="vdxNet/Net.cs" Line="39" Column="7" />
+      <File FileName="vdxSync/Program.cs" Line="15" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.vdxMirrors PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

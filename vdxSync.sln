@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vdxSync", "vdxSync\vdxSync.csproj", "{FE530334-9345-42EE-BE1E-99561C1304EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vdxMirrors", "vdxMirrors\vdxMirrors.csproj", "{83E0D3E5-0C29-4387-B649-9E151AE6CFB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vdxNet", "vdxNet\vdxNet.csproj", "{2CE18A6C-DE44-4E19-BCD0-4F14C497D57B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE530334-9345-42EE-BE1E-99561C1304EA}.Debug|x86.ActiveCfg = Debug|x86
+		{FE530334-9345-42EE-BE1E-99561C1304EA}.Debug|x86.Build.0 = Debug|x86
+		{FE530334-9345-42EE-BE1E-99561C1304EA}.Release|x86.ActiveCfg = Release|x86
+		{FE530334-9345-42EE-BE1E-99561C1304EA}.Release|x86.Build.0 = Release|x86
+		{83E0D3E5-0C29-4387-B649-9E151AE6CFB3}.Debug|x86.ActiveCfg = Debug|x86
+		{83E0D3E5-0C29-4387-B649-9E151AE6CFB3}.Debug|x86.Build.0 = Debug|x86
+		{83E0D3E5-0C29-4387-B649-9E151AE6CFB3}.Release|x86.ActiveCfg = Release|x86
+		{83E0D3E5-0C29-4387-B649-9E151AE6CFB3}.Release|x86.Build.0 = Release|x86
+		{2CE18A6C-DE44-4E19-BCD0-4F14C497D57B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2CE18A6C-DE44-4E19-BCD0-4F14C497D57B}.Debug|x86.Build.0 = Debug|Any CPU
+		{2CE18A6C-DE44-4E19-BCD0-4F14C497D57B}.Release|x86.ActiveCfg = Release|Any CPU
+		{2CE18A6C-DE44-4E19-BCD0-4F14C497D57B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
