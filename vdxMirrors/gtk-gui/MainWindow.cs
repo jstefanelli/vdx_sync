@@ -29,7 +29,6 @@ public partial class MainWindow
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox();
 		this.hbox1.Name = "hbox1";
-		this.hbox1.Homogeneous = true;
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.lblCaches = new global::Gtk.Label();
@@ -40,12 +39,14 @@ public partial class MainWindow
 		w1.Position = 0;
 		w1.Expand = false;
 		w1.Fill = false;
+		w1.Padding = ((uint)(2));
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.cbxCache = global::Gtk.ComboBox.NewText();
 		this.cbxCache.Name = "cbxCache";
 		this.hbox1.Add(this.cbxCache);
 		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.cbxCache]));
 		w2.Position = 1;
+		w2.Padding = ((uint)(2));
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.label2 = new global::Gtk.Label();
 		this.label2.Name = "label2";
@@ -55,12 +56,14 @@ public partial class MainWindow
 		w3.Position = 2;
 		w3.Expand = false;
 		w3.Fill = false;
+		w3.Padding = ((uint)(2));
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.cbxMirrors = global::Gtk.ComboBox.NewText();
 		this.cbxMirrors.Name = "cbxMirrors";
 		this.hbox1.Add(this.cbxMirrors);
 		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.cbxMirrors]));
 		w4.Position = 3;
+		w4.Padding = ((uint)(2));
 		this.vbox1.Add(this.hbox1);
 		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox1]));
 		w5.Position = 0;
