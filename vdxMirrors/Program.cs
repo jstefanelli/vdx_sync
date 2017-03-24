@@ -9,6 +9,12 @@ namespace vdxMirrors
 {
 	class MainClass
 	{
+
+#if DEBUG
+		public const string defaultCacheAddr = "http://localhost/vdx";
+#else
+		public const string defaultCacheAddr = "http://jstefanelli.com/vdx"; 
+#endif
 		[System.Runtime.InteropServices.DllImport("kernel32.dll", CharSet = System.Runtime.InteropServices.CharSet.Unicode, SetLastError = true)]
 		[return: System.Runtime.InteropServices.MarshalAs(System.Runtime.InteropServices.UnmanagedType.Bool)]
 		static extern bool SetDllDirectory(string lpPathName);
@@ -90,12 +96,16 @@ namespace vdxMirrors
 
 		public void start()
 		{
-			CheckWindowsGtk();
+			if(vdxNet.Net.nextFolderChar == '\\')
+				CheckWindowsGtk();
 			Application.Init();
 
 			MainWindow win = new MainWindow();
 			win.Show();
-
+			Cache defaultCache = new Cache(defaultCacheAddr);
+			defaultCache.title = "Default Cache";
+			win.AddCache(defaultCache);
+			win.SetActiveCache(0);
 			win.OnCacheChanged += OnCacheChanged;
 			win.OnMirrorChanged += OnMirrorChanged;
 			Application.Run();

@@ -31,6 +31,7 @@ public partial class MainWindow : Gtk.Window
 		}
 
 		cbxCache.Changed += OncbxCacheChangedEvent;
+
 	}
 
 	protected void OncbxCacheChangedEvent(object sender, EventArgs a)
@@ -65,5 +66,9 @@ public partial class MainWindow : Gtk.Window
 		cbxCache.InsertText(caches.Count - 1, c.title);
 	}
 
+	public void SetActiveCache(int index)
+	{
+		cbxCache.Active = index;
+	}
 
 }

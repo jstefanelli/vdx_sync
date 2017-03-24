@@ -15,6 +15,16 @@ public partial class MainWindow
 
 	private global::Gtk.ComboBox cbxMirrors;
 
+	private global::Gtk.HBox hbox2;
+
+	private global::Gtk.ScrolledWindow GtkScrolledWindow;
+
+	private global::Gtk.TreeView trvCachedVideos;
+
+	private global::Gtk.ScrolledWindow GtkScrolledWindow1;
+
+	private global::Gtk.TreeView trvMirrorVideos;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -69,6 +79,37 @@ public partial class MainWindow
 		w5.Position = 0;
 		w5.Expand = false;
 		w5.Fill = false;
+		// Container child vbox1.Gtk.Box+BoxChild
+		this.hbox2 = new global::Gtk.HBox();
+		this.hbox2.Name = "hbox2";
+		this.hbox2.Spacing = 6;
+		// Container child hbox2.Gtk.Box+BoxChild
+		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
+		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
+		this.trvCachedVideos = new global::Gtk.TreeView();
+		this.trvCachedVideos.CanFocus = true;
+		this.trvCachedVideos.Name = "trvCachedVideos";
+		this.GtkScrolledWindow.Add(this.trvCachedVideos);
+		this.hbox2.Add(this.GtkScrolledWindow);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.GtkScrolledWindow]));
+		w7.Position = 0;
+		// Container child hbox2.Gtk.Box+BoxChild
+		this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow();
+		this.GtkScrolledWindow1.Name = "GtkScrolledWindow1";
+		this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
+		this.trvMirrorVideos = new global::Gtk.TreeView();
+		this.trvMirrorVideos.CanFocus = true;
+		this.trvMirrorVideos.Name = "trvMirrorVideos";
+		this.GtkScrolledWindow1.Add(this.trvMirrorVideos);
+		this.hbox2.Add(this.GtkScrolledWindow1);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.GtkScrolledWindow1]));
+		w9.Position = 1;
+		this.vbox1.Add(this.hbox2);
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox2]));
+		w10.Position = 1;
 		this.Add(this.vbox1);
 		if ((this.Child != null))
 		{
