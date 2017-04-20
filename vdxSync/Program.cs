@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.IO;
-using System.Net;
 using vdxNet;
 
 namespace vdxSync
@@ -93,7 +92,7 @@ namespace vdxSync
 			NameValueCollection headers = new NameValueCollection();
 			headers.Add("X-Requested-With", "xmlhttprequest");
 
-			bool u = Net.vdxUpload("http://" + m.ip + "/vdx_archive/ajax", m.file, 1024 * 1024,(uint) m.id, headers);
+			bool u = Net.vdxUpload(m.ip + "/ajax", m.file, 1024 * 1024,(uint) m.id, headers);
 
 			if (u)
 			{
