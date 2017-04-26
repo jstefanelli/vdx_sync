@@ -11,6 +11,7 @@ namespace vdxSync
 		protected string ip;
 		protected short port;
 		protected bool hasError;
+		protected bool doRemove;
 		protected int id;
 		protected static char nextFolderChar;
 
@@ -20,6 +21,7 @@ namespace vdxSync
 			file = "";
 			ip = "";
 			id = -1;
+			doRemove = false;
 			hasError = false;
 			switch (System.Environment.OSVersion.Platform)
 			{
@@ -61,6 +63,10 @@ namespace vdxSync
 					i++;
 					m.id = int.Parse(args[i]);
 				}
+				else if (a.ToLower().Equals("-r"))
+				{
+					m.doRemove = true;
+				}
 			}
 			if (m.ip.Equals(""))
 			{
@@ -97,6 +103,10 @@ namespace vdxSync
 			if (u)
 			{
 				Console.WriteLine("Upload successful.");
+				if (m.doRemove)
+				{
+					File.Delete(m.file);
+				}
 			}
 			else
 			{
